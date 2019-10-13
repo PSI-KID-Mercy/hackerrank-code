@@ -1,0 +1,34 @@
+/** Hey I have created something creative to see.Check it out by entering Your Name.**/
+/*********************************************************/
+/*****           CReaTed by  suMit TomAr          ********/
+/*********************************************************/
+
+import java.util.*;
+class SimpleDesign
+
+{
+    public static void main(String []args)
+    {
+        String a;
+    System.out.println("Thats Your OutPut :- ");
+    Scanner obj=new Scanner(System.in);
+     a=obj.next();
+    for(int i=10;i>=1;i--)
+    {
+        for(int j=1;j<=i;j++)
+    {
+        System.out.print("*"+a+"*");
+    }
+    
+    System.out.println();
+}
+    for(int k=1;k<=10;k++)
+        {
+        for(int l=1;l<=k;l++)
+        {
+            System.out.print("*"+a+"*");
+        }
+        System.out.println("");
+        }
+    }
+}
