@@ -1,0 +1,12 @@
+import os
+os.system("ipconfig >> ip.txt")
+fil = open("ip.txt","r")
+a = fil.read()
+num1 = a.find("Wi-Fi")
+num2 = a[num1:].find("IPv4")
+ip = a[num1:][num2:][:a[num1:][num2:].index("\n")][a[num1:][num2:][:a[num1:][num2:].index("\n")].index(": ")+2:]
+print(ip,end="")
+fil = open("ip.txt","w")
+fil.write("")
+#os.system('xrandr | grep " connected" |cut -f1 -d " ">>a.txt')
+
